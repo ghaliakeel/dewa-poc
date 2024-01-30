@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.side-bar {
+  background-color: #f0f2f6;
+}
+
+.upload-box{
+  padding: 6rem 1.5rem;
+}
+
+.upload-box h3 {
+  font-size: 1.125rem!important;
+}
+
+.st-emotion-cache-taue2i {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  color: rgb(49, 51, 63);
+}
+
+.white-section-animation {
+  transition: transform 0.7s ease-in-out;
+}
+
+
+.button-style{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  min-height: 38.4px;
+  margin: 0px;
+  line-height: 1.6;
+  color: inherit;
+  width: auto;
+  user-select: none;
+  background-color: rgb(249, 249, 251);
+  border: 1px solid rgba(49, 51, 63, 0.2);
+}
+
+.button-style:hover{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  min-height: 38.4px;
+  margin: 0px;
+  line-height: 1.6;
+  color: inherit;
+  width: auto;
+  user-select: none;
+  color: #5F249F;
+  border: 1px solid #5F249F;
+}
+
+.RxCrossHover:hover {
+  background-color:#dddee3;
+  border-radius: 10px;
+}
+
+input[type=text]:focus {
+  border: 1px solid #6610f2!important;
+  outline:none!important;
+}
+
+
+.sidebar-open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  transform: 300ms ease 0s, min-width 300ms ease 0s, max-width 300ms ease 0s
+}
+
+.sidebar-closed {
+  transform: translateX(-349px); /* or your desired width */
+  transition: transform 0.3s ease-in-out;
+  transform: 300ms ease 0s, min-width 300ms ease 0s, max-width 300ms ease 0s;
+  width: 0;
+}
+
+.remove-pdf svg:hover {
+
+  color:red!important;
+
+}
+
+.chat-message {
+  padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
+}
+.chat-message.user {
+  /*background-color: #2b313e*/
+}
+.chat-message.bot {
+  /*background-color: #475063*/
+  background-color:#f0f2f6;
+}
+.chat-message .avatar {
+width: 20%;
+}
+.chat-message .avatar img {
+max-width: 78px;
+max-height: 78px;
+border-radius: 50%;
+object-fit: cover;
+}
+.chat-message .message {
+width: 80%;
+padding: 0 1.5rem;
+/*color: #fff;*/
+color:rgb(49, 51, 63);
+}
+
+.p-tag-container p {
+  overflow-wrap: break-word!important; /* This property makes text break and wrap to the next line */
+}
+
+/* Define styles for screens up to 920px width */
+@media (max-width: 920px) {
+  .sidebar-open {
+    /* Define styles for the open sidebar at this width */
+    width: 0!important; /* Adjust as needed */
+  }
+
+@media(max-width:567px) {
+  .chat-margin {
+    margin:1rem!important;
+  }
+  .header {
+    padding:0rem!important;
+  }
+  .dxc-logo{
+    width: 312px!important;
+  }
+
+  .header h1 {
+    font-size: 24px!important;
+  }
+
+}
+
+
+
+  /* Other styles for the open sidebar at this width */
+}
+
+/* Define styles for screens above 920px width */
+@media (min-width: 921px) {
+  .sidebar-open {
+    /* Define styles for the open sidebar at this width */
+    width: 349px!important; /* Your original width */
+  }
+
+  /* Other styles for the open sidebar at this width */
+}
+
+/*6rem 1.5rem*/
