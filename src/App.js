@@ -133,7 +133,7 @@ function App() {
 
 
     <div
-          ref={chatContainerRef} {/* Helps keeping the window scrolled to the latest messages*/}
+          ref={chatContainerRef} 
           className="d-flex flex-column w-100"
           style={{ overflowY: 'scroll', maxHeight: '400px' }}
         >
